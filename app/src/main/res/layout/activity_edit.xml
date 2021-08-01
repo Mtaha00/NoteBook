@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditActivity"
+    android:background="#2800BCD4">
+
+
+        <EditText
+            android:id="@+id/titleEdit_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:gravity="center"
+            android:hint="Title"
+            android:inputType="text"
+            android:maxLength="18"
+            android:textSize="32sp" />
+    <TextView
+        android:id="@+id/textDate_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="21/2/20"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        />
+
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/titleEdit_edit"
+            android:layout_above="@+id/saveBTN_edit"
+            >
+
+            <EditText
+                android:id="@+id/textEdit_edit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:gravity="center"
+                android:inputType="textMultiLine"
+                android:hint="text"
+                android:scrollbars="vertical"
+                android:textAlignment="textStart"
+                android:singleLine="false"
+                tools:ignore="RtlCompat"
+                />
+        </ScrollView>
+
+
+
+    <Button
+        android:id="@+id/saveBTN_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="SAVE" />
+
+</RelativeLayout>
